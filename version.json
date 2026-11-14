@@ -2,9 +2,9 @@
   "version": "1.3.1",
   "date": "2026-11-14",
   "page_url": "https://github.com/yangyuli0602/MDMQ/releases/latest",
-  "size": 139839385,
+  "size": 139838002,
   "download_urls": [
-    "https://api.github.com/repos/yangyuli0602/MDMQ/releases/assets/745991925",
+    "https://api.github.com/repos/yangyuli0602/MDMQ/releases/assets/746001929",
     "https://github.com/yangyuli0602/MDMQ/releases/download/v1.3.1/MDMQ_v1.3.1_20261114.zip"
   ],
   "notes": "1. 新增一键自动更新：点「立即更新」自动下载、自动替换、自动重启，失败自动回滚\n2. 更新时自动保留 settings.json（设置与 AI Key 不丢）\n3. 下载支持多地址依次重试"
