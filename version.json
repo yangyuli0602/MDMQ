@@ -1,11 +1,11 @@
 {
-  "version": "1.4.6",
+  "version": "1.4.8",
   "date": "2026-11-27",
   "page_url": "https://github.com/yangyuli0602/MDMQ/releases/latest",
-  "size": 143170227,
+  "size": 143170471,
   "notes": "1. AI 生成 SQL 的规则从 8 条扩到 20 条：空值兜底、除法防零、金额两位小数、日期区间写法、GROUP BY 不漏列、禁占位符、不写 SELECT *\n2. 生成后自动试跑校验：先用 EXPLAIN 检查语法与列名，报错就把数据库原始报错发回让 AI 重写一次（只重写一次）\n3. 修复 SQLite 下写错列名却不报错的问题（它会把双引号当字符串字面量），已补表结构核对\n4. 状态栏显示「已按报错自动修正 1 次」/「试跑仍报错，请手动调整」",
   "download_urls": [
-    "https://api.github.com/repos/yangyuli0602/MDMQ/releases/assets/799866101",
-    "https://github.com/yangyuli0602/MDMQ/releases/download/v1.4.6/MDMQ_v1.4.6_20261127.zip"
+    "https://api.github.com/repos/yangyuli0602/MDMQ/releases/assets/799985133",
+    "https://github.com/yangyuli0602/MDMQ/releases/download/v1.4.8/MDMQ_v1.4.8_20261127.zip"
   ]
 }
