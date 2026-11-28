@@ -1,11 +1,11 @@
 {
-  "version": "1.4.8",
-  "date": "2026-11-27",
+  "version": "1.4.9",
+  "date": "2026-11-28",
   "page_url": "https://github.com/yangyuli0602/MDMQ/releases/latest",
-  "size": 143170471,
+  "size": 143190744,
+  "notes": "MDMQ v1.4.9 更新说明（2026-11-28）\n\n【导入提速与稳定性】\n1. 导入提速：CSV 写入改用 5000 行采样推断类型（原来全量预扫），2000 万行实测从 109 秒降到 19.6 秒，提速 5.6 倍；同一来源的表头探测结果缓存复用，避免重复打开文件。\n2. CSV 全列强制文本：彻底解决\"数字列里混入字母\"导致整个导入中止的问题（如 SEGMENT4 第 11298 行的 XY240200060001），脏值原样保留。\n3. 修复混合引号 CSV 列错位：前 6000 行无引号、后面才有引号的 ERP 导出文件，不再出现\"Expected 30 Found 31\"错误。\n4. 新支持伪 .xls：扩展名是 .xls 但实际是 GBK 编码 Oracle 试算表文本的文件可正常导入（真 OLE2 的 xls 不受影响）。\n\n【新功能：按表头分组合并】\n5. 输出区新增\"按表头分组合并\"选项：一批文件导入时，列名与顺序完全一致的合并成一个 Parquet，不同的各自输出，一次得到多个表头独立的文件。\n\n【查询与导出】\n6. 查询页导出格式默认改为 CSV（Excel 导出大数据极慢）。\n7. 内置 AI 提示词新增 CAST 规则：列是文本时做 SUM/AVG/数值比较前会先转换；复制表头时自动附带该提示说明。\n\n【更新体验修复】\n8. 修复更新下载期间最小化窗口后再也点不开的问题。\n9. 下载完成后提供明确的\"立即安装\"按钮，无需再弹确认框。\n\n【错误提示】\n10. 修复分组模式点\"开始\"没反应的问题；启动失败现在会弹窗明确提示，不再静默失败。",
   "download_urls": [
-    "https://api.github.com/repos/yangyuli0602/MDMQ/releases/assets/799985133",
-    "https://github.com/yangyuli0602/MDMQ/releases/download/v1.4.8/MDMQ_v1.4.8_20261127.zip"
-  ],
-  "notes": "1. 修复下载进度不刷新\n2. 多源择优下载、断点续传、重启DLL修复"
+    "https://api.github.com/repos/yangyuli0602/MDMQ/releases/assets/803192005",
+    "https://github.com/yangyuli0602/MDMQ/releases/download/v1.4.9/MDMQ_v1.4.9_20261128.zip"
+  ]
 }
